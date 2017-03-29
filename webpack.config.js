@@ -30,8 +30,6 @@ module.exports = (options = {}) => {
     },
     resolve: {
       alias: {
-        'react$': resolve(__dirname, './node_modules/react/dist/react.min.js'),
-        'react-dom$': resolve(__dirname, './node_modules/react-dom/dist/react-dom.min.js'),
         '~': resolve(__dirname, 'src'),
         'sass': resolve(__dirname, 'src', 'sass')
       }
