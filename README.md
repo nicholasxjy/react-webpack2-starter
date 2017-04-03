@@ -1,1 +1,3 @@
-# react-webpack2-starter
+# Nick blog react webpack2.x
+
+
