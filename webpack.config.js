@@ -1,10 +1,9 @@
 const { resolve } = require('path')
 const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = (options = {}) => {
-  return {
+  const config = {
     entry: {
       vendor: './src/vendor',
       index: './src/index'
@@ -20,18 +19,58 @@ module.exports = (options = {}) => {
         {
           test: /\.js$/,
           exclude: /node_modules/,
-          use: ['babel-loader']
+          use: ['babel-loader', 'eslint-loader']
+        },
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader', 'postcss-loader']
         },
         {
           test: /\.scss$/,
-          use: [{ loader: 'style-loader'}, { loader: 'css-loader'}, { loader: 'sass-loader'}]
+          use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }]
+        },
+        {
+          test: /\.html$/,
+          use: [
+            {
+              loader: 'html-loader',
+              options: {
+                root: resolve(__dirname, 'src'),
+                attrs: ['img:src', 'link:href']
+              }
+            }
+          ]
+        },
+        {
+          test: /favicon.png$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[hash].[ext]'
+              }
+            }
+          ]
+        },
+        {
+          test: /\.(png|jpg|jpeg|gif|eot|ttf|woff|woff2|svg|svgz)(\?.+)?$/,
+          exclude: /favicon\.png$/,
+          use: [
+            {
+              loader: 'url-loader',
+              options: {
+                limit: 10000
+              }
+            }
+          ]
         }
       ]
     },
     resolve: {
       alias: {
         '~': resolve(__dirname, 'src'),
-        'sass': resolve(__dirname, 'src', 'sass')
+        sass: resolve(__dirname, 'src', 'sass'),
+        assets: resolve(__dirname, 'src', 'assets')
       }
     },
     plugins: [
@@ -48,4 +87,5 @@ module.exports = (options = {}) => {
       port: 9000
     }
   }
+  return config
 }

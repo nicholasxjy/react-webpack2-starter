@@ -1,0 +1,221 @@
+.ryaudio-container {
+  display: flex;
+  align-items: center;
+}
+
+@-webkit-keyframes spinAroundA {
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn)
+  }
+}
+
+@keyframes spinAroundA {
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn)
+  }
+}
+
+.ryaudio-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  background-image: url('../assets/audio-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 1s;
+  animation: spinAroundA 10s linear infinite forwards;
+  animation-play-state: running;
+  &.is-paused {
+    animation-play-state: paused
+  }
+  img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+}
+
+.ryaudio-content {
+  flex: 1 1;
+  margin-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ryauio-info {
+  margin-bottom: 40px;
+}
+
+.ryaudio-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.ryaudio-singer {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ryaudio-progress-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.ryaudio-currenttime,
+.ryaudio-duration {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  display: block;
+  width: 40px;
+}
+.ryaudio-duration {
+  margin-left: 10px;
+}
+.ryaudio-progress {
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1100;
+  .ryaudio-progress-active {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    z-index: 1300;
+    height: 1px;
+    background-color: #4a4a4a;
+    cursor: pointer;
+  }
+  input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    height: 1px;
+    margin: -1px 0 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1200;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #4a4a4a;
+    cursor: pointer;
+    margin-top: -7px;
+    position: relative;
+    z-index: 1400;
+  }
+  input[type=range]::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #4a4a4a;
+    cursor: pointer;
+    margin-top: -7px;
+    position: relative;
+    z-index: 1400;
+  }
+  input[type=range]::-ms-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #4a4a4a;
+    cursor: pointer;
+    margin-top: -7px;
+    position: relative;
+    z-index: 1400;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.15);
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.15);
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.15);
+    color: transparent;
+  }
+}
+
+.ryaudio-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    cursor: pointer;
+    img {
+      display: block;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+@media (max-width:640px) {
+  .ryaudio-container {
+    width: 100% !important;
+    display: block;
+  }
+  .ryaudio-cover {
+    margin: 0 auto;
+  }
+  .ryaudio-content {
+    display: block;
+    margin-left: 0;
+    padding: 10px;
+  }
+  .ryauio-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .ryaudio-controls {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .ryaudio-controls a.ryaudio-next {
+    margin-right: 0;
+  }
+  .ry-audio-progress-slider {
+    margin-top: 0;
+  }
+}

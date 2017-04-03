@@ -1,0 +1,28 @@
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .group {
+    width: 150px;
+  }
+
+  .group-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .group-link {
+    a {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 13px;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.44);
+      &:hover {
+        text-decoration: underline;
+        color: #4a4a4a;
+      }
+    }
+  }

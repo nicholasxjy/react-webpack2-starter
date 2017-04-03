@@ -1,0 +1,44 @@
+.musics {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.music-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.music-item {
+  width: 220px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.music-cover {
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+.music-info {
+  margin-top: 10px;
+}
+
+.music-title {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.music-singer {
+  font-size: 12px;
+  margin-top: 5px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.44);
+}

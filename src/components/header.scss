@@ -1,0 +1,49 @@
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  img {
+    display: block;
+    width: 35px;
+  }
+}
+.moto {
+  margin-top: 30px;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  color: rgba(0,0,0,0.44);
+  text-align: center;
+}
+.tabs {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    display: block;
+    padding: 7px 18px;
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    &:hover, &.active {
+      box-shadow: 0 4px 4px rgba(0,0,0,.16);
+      transform: translate3d(0, -2px, 1px);
+    }
+    &.nav-photo {
+      background-color: #A8D8EA;
+    }
+    &.nav-music {
+      background-color: #AA96DA;
+    }
+    &.nav-video {
+      background-color: #FCBAD3;
+    }
+  }
+}

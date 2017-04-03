@@ -1,0 +1,27 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["enough", "plugin:react/recommended"],
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "plugins": [
+      "html",
+      "react"
+    ],
+    "rules": {
+      "no-unused-expressions": [
+        "error",
+        {
+          "allowShortCircuit": true,
+          "allowTernary": true
+        }
+      ],
+      "no-empty-function": "off",
+      "semi": [
+        "error",
+        "never"
+      ],
+      "no-extra-parens": "off"
+    }
+}
