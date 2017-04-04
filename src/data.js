@@ -183,6 +183,11 @@ export default {
       src: 'http://7xj610.com1.z0.glb.clouddn.com/what-most-schools-dont-teach.mp4'
     },
     {
+      id: 5,
+      poster: 'http://ocphdh79p.bkt.clouddn.com/cheap-thrills.png',
+      src: 'http://ocphdh79p.bkt.clouddn.com/be3edbea13dd99f485f5e3ad3d15579c.mp4'
+    },
+    {
       id: 3,
       poster: 'http://ocphdh79p.bkt.clouddn.com/hourofcode.png',
       src: 'http://ocphdh79p.bkt.clouddn.com/The%20Hour%20of%20Code%20is%20here.mp4'

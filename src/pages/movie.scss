@@ -8,9 +8,22 @@
 .video-item {
   margin-bottom: 30px;
   width: 460px;
+  &:nth-child(3) {
+    width: 940px;
+    height: 529px;
+    video {
+      width: 940px;
+      height: 529px;
+    }
+  }
 }
   @media (max-width:640px) {
     .video-item {
-      width: 100%;
+      width: 100% !important;
+      height: auto !important;
+      video {
+        width: 100% !important;
+        height: auto !important;
+      }
     }
   }
