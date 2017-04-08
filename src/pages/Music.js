@@ -9,8 +9,8 @@ export default class Music extends React.Component {
     super()
     this.state = {
       musics: data.musics,
-      currentMusic: data.musics[4],
-      currentIndex: 4
+      currentMusic: data.musics[0],
+      currentIndex: 0
     }
     this.changeMusic.bind(this)
   }
