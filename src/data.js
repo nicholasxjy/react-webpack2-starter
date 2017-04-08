@@ -118,14 +118,14 @@ export default {
       id: 9,
       cover: 'http://ocphdh79p.bkt.clouddn.com/17731824021476100.jpeg',
       title: 'Landing Guy',
-      signer: '刘昊霖 / kidult.',
+      singer: '刘昊霖 / kidult.',
       src: 'http://ocphdh79p.bkt.clouddn.com/%E5%88%98%E6%98%8A%E9%9C%96,kidult.%20-%20Landing%C2%A0Guy.mp3'
     },
     {
       id: 8,
       cover: 'http://ocphdh79p.bkt.clouddn.com/18791753232142320.jpeg',
       title: 'Wondeful U',
-      signer: 'AGA',
+      singer: 'AGA',
       src: 'http://ocphdh79p.bkt.clouddn.com/AGA%20-%20Wonderful%20U%20-%20Demo%20Version.mp3'
     },
     {
