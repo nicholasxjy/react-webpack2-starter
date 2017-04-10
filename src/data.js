@@ -124,7 +124,7 @@ export default {
     {
       id: 8,
       cover: 'http://ocphdh79p.bkt.clouddn.com/18791753232142320.jpeg',
-      title: 'Wondeful U',
+      title: 'Wonderful U',
       singer: 'AGA',
       src: 'http://ocphdh79p.bkt.clouddn.com/AGA%20-%20Wonderful%20U%20-%20Demo%20Version.mp3'
     },
