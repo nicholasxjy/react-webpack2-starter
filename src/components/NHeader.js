@@ -14,6 +14,9 @@ export default class NHeader extends React.Component {
         <div className="moto">
           精致的淘气，智性的叛逆
         </div>
+        <div className="sub-moto">
+          C'est la vie
+        </div>
         <div className="tabs">
           <NavLink to="/photo" activeClassName="active" className="nav-photo">PHOTO</NavLink>
           <NavLink to="/music" activeClassName="active" className="nav-music">MUSIC</NavLink>
