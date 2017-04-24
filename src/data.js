@@ -21,6 +21,29 @@ export default {
   ],
   photos: [
     {
+      id: 24,
+      url: 'http://ocphdh79p.bkt.clouddn.com/IMG_0509.JPG'
+    },
+    {
+      id: 25,
+      url: 'http://ocphdh79p.bkt.clouddn.com/IMG_0519.JPG'
+    },
+    {
+      id: 26,
+      url: 'http://ocphdh79p.bkt.clouddn.com/IMG_0508.JPG'
+    },
+    {
+      id: 27,
+      url: 'http://ocphdh79p.bkt.clouddn.com/IMG_0524.JPG'
+    },
+    {
+      id: 28,
+      url: 'http://ocphdh79p.bkt.clouddn.com/IMG_0504.JPG'
+    }, {
+      id: 29,
+      url: 'http://ocphdh79p.bkt.clouddn.com/IMG_0510.JPG'
+    },
+    {
       id: 1,
       url: 'http://7xj610.com1.z0.glb.clouddn.com//selfie/IMG_0239.JPG'
     },
@@ -114,6 +137,13 @@ export default {
     }
   ],
   musics: [
+    {
+      id: 10,
+      cover: 'http://ocphdh79p.bkt.clouddn.com/1367792465046820.jpeg',
+      title: '계절 끝 (잠 못 드는 밤 2)',
+      singer: 'Rocoberry',
+      src: 'http://ocphdh79p.bkt.clouddn.com/Rocoberry%20-%20%E1%84%80%E1%85%A8%E1%84%8C%E1%85%A5%E1%86%AF%20%E1%84%81%E1%85%B3%E1%87%80%20%28%E1%84%8C%E1%85%A1%E1%86%B7%20%E1%84%86%E1%85%A9%E1%86%BA%20%E1%84%83%E1%85%B3%E1%84%82%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%202%29.mp3'
+    },
     {
       id: 9,
       cover: 'http://ocphdh79p.bkt.clouddn.com/17731824021476100.jpeg',
