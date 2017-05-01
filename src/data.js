@@ -232,6 +232,11 @@ export default {
       src: 'http://ocphdh79p.bkt.clouddn.com/be3edbea13dd99f485f5e3ad3d15579c.mp4'
     },
     {
+      id: 6,
+      poster: 'http://ocphdh79p.bkt.clouddn.com/shapeofyou.png',
+      src: 'http://ocphdh79p.bkt.clouddn.com/Barack%20Obama%20Singing%20Shape%20of%20You%20by%20Ed%20Sheeran%20%28VERSION%20AUTO%20TUNE%29%20NOW%20ON%20iTUNES.mp4'
+    },
+    {
       id: 3,
       poster: 'http://ocphdh79p.bkt.clouddn.com/hourofcode.png',
       src: 'http://ocphdh79p.bkt.clouddn.com/The%20Hour%20of%20Code%20is%20here.mp4'
